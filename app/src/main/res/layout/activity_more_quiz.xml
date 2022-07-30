@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoreQuiz">
+
+    <ScrollView
+        android:visibility="visible"
+        android:id="@+id/more_quiz_scroll_view"
+        android:layout_marginBottom="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/more_quiz_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:hint="Search quiz"
+                    android:clickable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_weight=".75"
+                    android:background="@drawable/edit_text"
+                    android:layout_marginRight="10px"/>
+
+                <Button
+                    android:id="@+id/more_quiz_search_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter"
+                    android:layout_weight=".25"
+                    android:textColor="@color/white"
+                    android:paddingVertical="5px"
+                    android:paddingHorizontal="8px"
+                    android:background="@drawable/button_primary"/>
+            </LinearLayout>
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:visibility="gone"
+                android:id="@+id/more_quiz_not_found"
+                android:layout_marginTop="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:alignItems="center"
+                app:flexDirection="column"
+                app:justifyContent="center">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:src="@drawable/ic_undraw_empty_re_opql"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="40dp"
+                    android:text="Quiz not found"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Try search another quiz"
+                    android:textSize="18dp"/>
+            </com.google.android.flexbox.FlexboxLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/root_list">
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:paddingVertical="17dp"
+        app:justifyContent="space_evenly">
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_baseline_home_24"
+            tools:layout_editor_absoluteX="11dp"
+            tools:layout_editor_absoluteY="225dp"
+            android:id="@+id/imageButton"
+            android:tint="@color/colorSecondary" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_baseline_assignment_24"
+            tools:layout_editor_absoluteX="11dp"
+            tools:layout_editor_absoluteY="225dp"
+            android:id="@+id/imageButton2"
+            android:tint="@color/colorPrimary" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_baseline_person_24"
+            tools:layout_editor_absoluteX="11dp"
+            tools:layout_editor_absoluteY="225dp"
+            android:id="@+id/imageButton3"
+            android:tint="@color/colorSecondary" />
+    </com.google.android.flexbox.FlexboxLayout>
+</RelativeLayout>

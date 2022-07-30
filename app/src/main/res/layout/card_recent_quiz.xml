@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/card_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/border_radius"
+        android:padding="15sp">
+        <com.google.android.flexbox.FlexboxLayout
+            app:alignItems="center"
+            app:alignContent="center"
+            app:justifyContent="center"
+            android:layout_weight=".10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/short_name_card"
+                android:layout_width="55dp"
+                android:textAlignment="center"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="14dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/avatar_primary"
+                android:textColor="@color/white"
+                android:text="JHS"/>
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".90"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/name_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="Java hibernate spring"/>
+            <TextView
+                android:id="@+id/question_total_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 question"/>
+            <TextView
+                android:id="@+id/question_timestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 question"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

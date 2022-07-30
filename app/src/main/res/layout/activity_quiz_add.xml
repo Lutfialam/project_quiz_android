@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".QuizAdd">
+    <LinearLayout
+        android:paddingBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:flexDirection="row"
+            app:alignContent="center"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="10dp"
+            android:background="@color/white">
+            <ImageButton
+                android:id="@+id/quiz_add_back_home"
+                android:scaleType="fitCenter"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/ic_baseline_chevron_left_24"
+                android:background="@null"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:textSize="18dp"
+                app:layout_alignSelf="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back to home" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            app:justifyContent="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Quiz detail"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <EditText
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/quiz_add_quiz_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text"
+            android:fontFamily="@font/poppins_light"
+            android:hint="Name of quiz"
+            android:paddingVertical="10dp"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/quiz_add_quiz_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text"
+            android:fontFamily="@font/poppins_light"
+            android:hint="Description of quiz"
+            android:paddingVertical="10dp"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/quiz_add_quiz_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text"
+            android:fontFamily="@font/poppins_light"
+            android:hint="Time of quiz in minute"
+            android:paddingVertical="10dp"
+            android:inputType="number"
+            android:paddingLeft="10dp" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            app:justifyContent="space_between">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Question detail"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+                android:id="@+id/quiz_add_question_add"
+                android:tint="@color/colorPrimary" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <LinearLayout
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/quiz_add_question_layout_root">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/quiz_add_button_submit"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_primary"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

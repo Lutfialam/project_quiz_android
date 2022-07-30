@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/question_layout_root">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/question_id" />
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:textSize="18dp"
+        android:text="1. Siapakah orang ini? dan bagaimana dia nafas, makan, minum, mati, dan segalanya yang ia lakukan didalam hidupnya"/>
+    <RadioGroup
+        android:id="@+id/question_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="asd"
+            android:paddingVertical="10dp"
+            android:textColor="@drawable/radio_text"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/radio_background"
+            android:buttonTint="@drawable/radio_buttontint"
+            android:id="@+id/question_first_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="asd"
+            android:paddingVertical="10dp"
+            android:textColor="@drawable/radio_text"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/radio_background"
+            android:buttonTint="@drawable/radio_buttontint"
+            android:id="@+id/question_second_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="asd"
+            android:paddingVertical="10dp"
+            android:textColor="@drawable/radio_text"
+            android:layout_marginBottom="5dp"
+            android:buttonTint="@drawable/radio_buttontint"
+            android:background="@drawable/radio_background"
+            android:id="@+id/question_third_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="asd"
+            android:paddingVertical="10dp"
+            android:textColor="@drawable/radio_text"
+            android:layout_marginBottom="5dp"
+            android:buttonTint="@drawable/radio_buttontint"
+            android:background="@drawable/radio_background"
+            android:id="@+id/question_fourth_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <View
+        android:id="@+id/question_divider"
+        android:layout_marginVertical="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/button_primary"/>
+</LinearLayout>
